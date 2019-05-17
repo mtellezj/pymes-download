@@ -18,10 +18,31 @@ logging.basicConfig(filename=LOG_FILE, filemode='w')
 
 
 def delete_last_comma(text):
+    """If the last character is a comma, then delete it.
+
+    Args:
+        text (str): the text to search for a comma.
+
+    Returns:
+        str
+    """
     return text[:-1] + text[-1].replace(',', '')
 
 
 def get_pyme_data(url):
+    """Download a pyme's page and parse it for data.
+
+    This function search for pyme's name, street, street number,
+    block, city, state, country and postal code. Some pymes do
+    not has street number, so the data must be search at different
+    indexes.
+
+    Args:
+        url (str): the pyme's url.
+
+    Returns:
+        list
+    """
     data = scrap_page(url)
     name = data.find('span', {'itemprop': 'name'}).text
 
