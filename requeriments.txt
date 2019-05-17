@@ -1,5 +1,4 @@
-csv==latest
 click==7.0
-requests==latest
+requests==2.22.0
 tqdm==4.32.1
-bs4==latest
+bs4==0.0.1
