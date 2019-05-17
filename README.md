@@ -10,3 +10,7 @@ https://pymes.org.mx/site/municipios.html y seleccionar el municipio
 deseado. En esa página en la barra de direcciones aparecerá el nombre del
 municipio seguido de .html. En esta página en la parte inferior aparecen
 los números de la paginación que se pueden usar como valores de inicio y fin.
+
+Para instalar las dependencias es necesario ejecutar el comando:
+
+    pip install -r requeriments.txt
