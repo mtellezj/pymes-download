@@ -1,0 +1,5 @@
+csv==latest
+click==7.0
+requests==latest
+tqdm==4.32.1
+bs4==latest
